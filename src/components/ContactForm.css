@@ -1,0 +1,61 @@
+.form-container {
+    background: #d3d3d3;
+    padding: 20px;
+    border-radius: 10px;
+    width: 25vw;
+    margin: auto;
+  }
+  
+  .title {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-right: 8px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin: 10px 0 5px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  textarea {
+    height: 80px;
+  }
+  
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b0aaff;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .arrow {
+    margin-left: 5px;
+  }
+  
