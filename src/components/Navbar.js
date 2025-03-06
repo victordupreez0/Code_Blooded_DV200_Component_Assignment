@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
-import "./Navbar.css"; 
+import "./Navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,8 +10,8 @@ const Navbar = () => {
         <div className="circle-logo"></div>
         CIRCLE
       </div>
-      <div className={`menu ${isOpen ? 'open' : ''}`} onClick={() => setIsOpen(!isOpen)}>
-       {isOpen ? <FaChevronUp /> : <FaChevronDown />}
+      <div className={`menu ${isOpen ? "open" : ""}`} onClick={() => setIsOpen(!isOpen)}>
+        {isOpen ? "▲" : "▼"}
       </div>
       {isOpen && (
         <div className="dropdown">
