@@ -16,7 +16,7 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="dropdown">
-          <a href="#">Products</a>
+          <a href="#card-container">Products</a>
           <a href="#">FAQ</a>
           <a href="#">Contact</a>
         </div>
