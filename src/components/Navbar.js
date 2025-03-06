@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import "./Navbar.css"; 
 
 const Navbar = () => {
@@ -6,15 +7,18 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="logo">○ CIRCLE</div>
-      <div className="menu" onClick={() => setIsOpen(!isOpen)}>
-        MENU {isOpen ? "▲" : "▼"}
+      <div className="logo">
+        <div className="circle-logo"></div>
+        CIRCLE
+      </div>
+      <div className={`menu ${isOpen ? 'open' : ''}`} onClick={() => setIsOpen(!isOpen)}>
+       {isOpen ? <FaChevronUp /> : <FaChevronDown />}
       </div>
       {isOpen && (
         <div className="dropdown">
-          <a href="#">Link 1</a>
-          <a href="#">Link 1</a>
-          <a href="#">Link 1</a>
+          <a href="#">Products</a>
+          <a href="#">FAQ</a>
+          <a href="#">Contact</a>
         </div>
       )}
     </div>

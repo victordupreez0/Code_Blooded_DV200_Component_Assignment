@@ -32,7 +32,7 @@ export default function ContactForm() {
           required
         ></textarea>
 
-        <button type="submit">
+        <button class="submit" type="submit">
           Send <span className="arrow">➤</span>
         </button>
       </form>
